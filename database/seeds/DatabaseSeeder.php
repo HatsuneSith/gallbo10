@@ -14,7 +14,25 @@ class DatabaseSeeder extends Seeder {
 	{
 		Model::unguard();
 
-		// $this->call('UserTableSeeder');
+		$this->call('UsuariosTableSeeder');
 	}
+
+}
+
+class UsuariosTableSeeder extends Seeder {
+
+    public function run()
+    {
+        DB::table('usuarios')->insert(array(
+                'nombre' => 'Miguel',
+                'apellido' => 'Lara',
+                'email' => 'mlara@markoptic.mx',
+                'departamento' => 'Direccion',
+                'rol' => 'Directivo',
+                'password' => Hash::make('malo4410')
+        ));
+
+ 
+    }
 
 }

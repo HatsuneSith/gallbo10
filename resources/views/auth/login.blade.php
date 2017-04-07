@@ -1,61 +1,59 @@
-@extends('app')
+<!DOCTYPE html>
+<html>
+<head>
 
-@section('content')
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
-				<div class="panel-heading">Login</div>
-				<div class="panel-body">
-					@if (count($errors) > 0)
-						<div class="alert alert-danger">
-							<strong>Whoops!</strong> There were some problems with your input.<br><br>
-							<ul>
-								@foreach ($errors->all() as $error)
-									<li>{{ $error }}</li>
-								@endforeach
-							</ul>
-						</div>
-					@endif
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SIRE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-					<form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/login') }}">
-						<input type="hidden" name="_token" value="{{ csrf_token() }}">
+    {{HTML::style('css/bootstrap.min.css')}}
+    {{HTML::style('css/style.css')}}
 
-						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mail Address</label>
-							<div class="col-md-6">
-								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
-							</div>
-						</div>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
-							<div class="col-md-6">
-								<input type="password" class="form-control" name="password">
-							</div>
-						</div>
+</head>
 
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" name="remember"> Remember Me
-									</label>
-								</div>
-							</div>
-						</div>
+<body>
 
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">Login</button>
 
-								<a class="btn btn-link" href="{{ url('/password/email') }}">Forgot Your Password?</a>
-							</div>
-						</div>
-					</form>
-				</div>
+
+	<div class="container">
+		
+		{{ Form::open(array('url' => 'login', 'class' => 'form-signin')) }}
+			<div class="signin-img" >
+			<img  src="/img/logogallbo.png" alt="">
 			</div>
-		</div>
+			<label for="" class="sr-only">Correo</label>
+			<input type="text" id="email" name="email" class="form-control" placeholder="Correo" required autofocus>
+			<label for="" class="sr-only">Password</label>
+			<input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+			<div class="checkbox">
+				<label>
+				<input type="checkbox" name="recordar"> Recuérdame
+				</label>
+			</div>
+			@if (Session::has('mensaje_login'))
+			 	<br>
+			 	<div class="alert alert-danger">
+			 		{{ Session::get('mensaje_login') }}
+			 	</div>
+			@endif
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesion</button>
+
+		{{ Form::close() }}
+
 	</div>
-</div>
-@endsection
+
+    <!-- jQuery -->
+    {{HTML::script('js/jquery.js')}}
+    {{HTML::script('js/bootstrap.min.js')}}
+
+</body>
+
+</html>
