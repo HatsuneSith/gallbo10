@@ -25,6 +25,10 @@ class AppServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
+		\Blade::setRawTags('{{', '}}');
+		\Blade::setContentTags('{{{', '}}}');
+		\Blade::setEscapedContentTags('{{{', '}}}');
+
 		$this->app->bind(
 			'Illuminate\Contracts\Auth\Registrar',
 			'App\Services\Registrar'
