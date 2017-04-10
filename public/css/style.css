@@ -1,0 +1,237 @@
+html, body {
+  height: 100%;
+
+}
+body{
+  position: relative;
+  padding-top: 62px;
+
+}
+
+.navbar{
+  background-color: #214F77;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/*las siguientes linea hace que funcione el menu lateral*/
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+}
+
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block; /* force showing the toggle */
+  }
+}
+
+.navmenu, .navbar-offcanvas {
+  width: 200px;
+  height: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+}
+
+
+
+
+.principal {
+  background-color: #ffffff;
+  min-height: 100%;
+  overflow: hidden;
+  color: #000000;
+  position: relative;
+  border-bottom: 3px solid #e7e7e7;
+}
+.contenido{
+  padding-top: 25px;
+}
+
+footer{
+  background-color: #214F77;
+  color: rgb(231, 231, 231);
+  font-size: large;
+  text-align: center;
+}
+
+footer .col-sm-3, footer .col-xs-6{
+  text-align: center;
+}
+
+
+footer hr{
+  border-top: 1px solid rgb(231, 231, 231);
+}
+
+h2{
+  color: rgb(0, 44, 105);
+}
+
+
+
+/*Estilo para formulario login*/
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.signin-img{
+	text-align: center;
+}
+.form-signin img {
+  max-width: 250px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.menu-opciones{
+  text-align: center;
+}
+
+.thumbnail .glyphicon{
+    font-size: 75px;
+}
+.thumbnail .fa{
+    font-size: 75px;
+}
+
+
+.thumbnail {
+  display: block;
+  padding: 10px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #337ab7;
+  border: 1px solid #337ab7;
+  border-radius: 20px;
+  text-align: center;
+  color: #ffffff;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+  width: 300px;
+}
+
+.thumbnail:hover {
+  background-color: #214F77;
+  border: 1px solid #214F77;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+}
+
+.bg-primary{
+  color: #ffffff;
+  background-color: #214F77;
+}
+
+.controles{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.label-prevent {
+  background-color: #F8D244;
+}
+
+.alert-success a{
+  text-decoration: none;
+  background-color: #337ab7;
+}
+
+
+@media only screen and (max-width: 800px) {
+  
+  /* Force table to not be like tables anymore */
+  #tabla_tareas table, 
+  #tabla_tareas thead, 
+  #tabla_tareas tbody, 
+  #tabla_tareas th, 
+  #tabla_tareas td, 
+  #tabla_tareas tr { 
+    display: block; 
+  }
+ 
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #tabla_tareas thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+ 
+  #tabla_tareas tr { border: 1px solid #ccc; }
+ 
+  #tabla_tareas td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+    white-space: normal;
+    text-align:left;
+  }
+ 
+  #tabla_tareas td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+    text-align:left;
+    font-weight: bold;
+  }
+ 
+  /*
+  Label the data
+  */
+  #tabla_tareas td:before { content: attr(data-title); }
+}
+
+.table .btn {
+    margin: 2px;
+}
+
+.return .glyphicon{
+    font-size: 75px;
+}
+
+.dropdown-header {
+    font-size: 14px;
+}

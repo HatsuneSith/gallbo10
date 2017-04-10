@@ -1,4 +1,10 @@
 /vendor
-/public
+/public/audio
+/public/formatos
+/public/images
+/public/img
+/public/packages
+/public/siniestros
+/public/src
 /node_modules
 .env
