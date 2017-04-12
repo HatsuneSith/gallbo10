@@ -1,4 +1,12 @@
-<?php 
+<?php namespace App\Http\Controllers;
+use View;
+use Auth;
+use DB;
+use App\Models\ClientesJuridico;
+use App\Models\FechasJuicios;
+use App\Models\AcuerdosJuridico;
+
+
 class JuridicoController extends Controller {
 
     public function inicio()

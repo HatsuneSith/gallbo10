@@ -1,5 +1,7 @@
-<?php 
-class Siniestro extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class Siniestro extends Model {
     protected $table = 'Siniestros';
     protected $fillable = array('fecha',
                                 'num_siniestro', 
@@ -19,67 +21,67 @@ class Siniestro extends Eloquent {
 
 
     public function estado(){
-    	return $this->belongsTo('Estados', 'estado', 'id');
+    	return $this->belongsTo('App\Models\Estados', 'estado', 'id');
     }
 
     public function tipo_siniestro(){
-        return $this->belongsTo('TiposSiniestros', 'tipo_siniestro', 'id');
+        return $this->belongsTo('App\Models\TiposSiniestros', 'tipo_siniestro', 'id');
     }
 
     public function contrato(){
-    	return $this->hasOne('ContratoSiniestro', 'id_siniestro');
+    	return $this->hasOne('App\Models\ContratoSiniestro', 'id_siniestro');
     }
 
     public function asegurado(){
-        return $this->belongsTo('Asegurado', 'id_asegurado', 'id');
+        return $this->belongsTo('App\Models\Asegurado', 'id_asegurado', 'id');
     }
 
     public function aseguradora(){
-        return $this->belongsTo('Aseguradora', 'id_aseguradora', 'id');
+        return $this->belongsTo('App\Models\Aseguradora', 'id_aseguradora', 'id');
     }
 
     public function agente_seguros(){
-        return $this->belongsTo('AgenteSeguroSiniestro', 'id_agente_seguros', 'id');
+        return $this->belongsTo('App\Models\AgenteSeguroSiniestro', 'id_agente_seguros', 'id');
     }
 
     public function ajustadora(){
-        return $this->belongsTo('Ajustadora', 'id_ajustadora', 'id');
+        return $this->belongsTo('App\Models\Ajustadora', 'id_ajustadora', 'id');
     }
 
     public function ajustador_designado(){
-        return $this->belongsTo('AjustadorDesignado', 'id_ajustador_designado', 'id');
+        return $this->belongsTo('App\Models\AjustadorDesignado', 'id_ajustador_designado', 'id');
     }
 
     public function poliza(){
-        return $this->belongsTo('Poliza', 'id_poliza', 'id');
+        return $this->belongsTo('App\Models\Poliza', 'id_poliza', 'id');
     }
 
     public function averiguacion_previa(){
-        return $this->belongsTo('AveriguacionPrevia', 'id_averiguacion_previa', 'id');
+        return $this->belongsTo('App\Models\AveriguacionPrevia', 'id_averiguacion_previa', 'id');
     }
 
     public function clasificacion_documentos(){
-        return $this->belongsToMany('ClasificacionDocumentos', 'ClasificacionDocumentosSiniestros', 'id_siniestro', 'id_clasificacion');
+        return $this->belongsToMany('App\Models\ClasificacionDocumentos', 'App\Models\ClasificacionDocumentosSiniestros', 'id_siniestro', 'id_clasificacion');
     }
 
     public function bitacora(){
-        return $this->hasMany('Bitacora', 'id_siniestro');
+        return $this->hasMany('App\Models\Bitacora', 'id_siniestro');
     }
 
     public function ejecutivo_asignado(){
-        return $this->belongsToMany('Usuario', 'EjecutivoAsignado', 'id_siniestro', 'id_usuario');
+        return $this->belongsToMany('App\Models\Usuario', 'App\Models\EjecutivoAsignado', 'id_siniestro', 'id_usuario');
     }
 
     public function responsable(){
-        return $this->belongsToMany('Usuario', 'ResponsableSiniestro', 'id_siniestro', 'id_usuario');
+        return $this->belongsToMany('App\Models\Usuario', 'App\Models\ResponsableSiniestro', 'id_siniestro', 'id_usuario');
     }
 
     public function documentos(){
-        return $this->belongsToMany('Documentos', 'DocumentosSiniestros', 'id_siniestro', 'id_documento')->withPivot('id_responsable', 'nombre_responsable', 'fecha_entrega', 'entregado', 'archivo', 'observaciones');
+        return $this->belongsToMany('App\Models\Documentos', 'App\Models\DocumentosSiniestros', 'id_siniestro', 'id_documento')->withPivot('id_responsable', 'nombre_responsable', 'fecha_entrega', 'entregado', 'archivo', 'observaciones');
     }
 
     public function tablero(){
-        return $this->hasOne('TableroFechas', 'id_siniestro');
+        return $this->hasOne('App\Models\TableroFechas', 'id_siniestro');
     }
 
 

@@ -1,5 +1,7 @@
-<?php 
-class TiposSiniestros extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class TiposSiniestros extends Model {
     protected $table = 'TiposSiniestros';
 
     /*public function promSiniestros(){

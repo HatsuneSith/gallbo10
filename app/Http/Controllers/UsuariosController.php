@@ -1,4 +1,11 @@
-<?php 
+<?php namespace App\Http\Controllers;
+use View;
+use Auth;
+use DB;
+use App\Models\Usuario;
+use App\Models\Asignacion;
+
+
 class UsuariosController extends Controller {
 
     public function inicio()

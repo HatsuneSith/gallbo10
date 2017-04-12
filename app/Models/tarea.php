@@ -1,18 +1,21 @@
-<?php 
-class Tarea extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use DB;
+class Tarea extends Model {
     protected $table = 'tareas';
     protected $fillable = array('id_compromiso', 'tarea', 'objetivo', 'fecha', 'estado', 'indicador', 'id_responsable', 'nombre_responsable', 'id_asignador', 'nombre_asignador', 'fecha_concluida');
 
     public function comentariosTareas(){
-    	return $this->hasMany('ComentarioTarea', 'id_tarea');
+    	return $this->hasMany('App\Models\ComentarioTarea', 'id_tarea');
     }
 
     public function prorrogas(){
-    	return $this->hasMany('Prorroga', 'id_tarea');
+    	return $this->hasMany('App\Models\Prorroga', 'id_tarea');
     }
 
     public function usuarios(){
-    	return $this->belongsTo('Usuario', 'id');
+    	return $this->belongsTo('App\Models\Usuario', 'id');
     }
 
     public function scopeResponsable($query, $id_responsable)

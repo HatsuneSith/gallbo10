@@ -1,5 +1,7 @@
-<?php 
-class DocumentosSiniestros extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class DocumentosSiniestros extends Model {
     protected $table = 'DocumentosSiniestros';
     protected $fillable = array('id_siniestro',
                                 'id_documento',

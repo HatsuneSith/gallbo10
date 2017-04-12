@@ -1,5 +1,7 @@
-<?php 
-class ApoderadoLegal extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class ApoderadoLegal extends Model {
     protected $table = 'ApoderadoLegal';
     protected $fillable = array('nombre',
                                 'sexo', 
@@ -15,7 +17,7 @@ class ApoderadoLegal extends Eloquent {
 
 
     public function sexo(){
-        return $this->belongsTo('Sexos', 'sexo', 'id');
+        return $this->belongsTo('App\Models\Sexos', 'sexo', 'id');
     }
 
 }

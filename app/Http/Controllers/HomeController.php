@@ -1,4 +1,6 @@
 <?php namespace App\Http\Controllers;
+use View;
+use Auth;
 
 class HomeController extends Controller {
 

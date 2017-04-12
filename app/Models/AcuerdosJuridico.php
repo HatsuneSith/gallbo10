@@ -1,5 +1,7 @@
-<?php 
-class AcuerdosJuridico extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class AcuerdosJuridico extends Model {
     protected $table = 'AcuerdosJuridico';
     protected $fillable = array('id_cliente',
                                 'mes',

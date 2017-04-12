@@ -1,5 +1,7 @@
-<?php 
-class ContratoSiniestro extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class ContratoSiniestro extends Model {
     protected $table = 'ContratoSiniestro';
     protected $fillable = array('asegurado',
                                 'apoderado_legal', 
@@ -25,15 +27,15 @@ class ContratoSiniestro extends Eloquent {
     
 
     public function tipo_siniestro(){
-        return $this->belongsTo('TiposSiniestros', 'tipo_siniestro', 'id');
+        return $this->belongsTo('App\Models\TiposSiniestros', 'tipo_siniestro', 'id');
     }
 
     public function estado(){
-        return $this->belongsTo('Estados', 'estado_contrato', 'id');
+        return $this->belongsTo('App\Models\Estados', 'estado_contrato', 'id');
     }
 
     public function siniestro(){
-        return $this->belongsTo('Siniestro', 'id_siniestro', 'id');
+        return $this->belongsTo('App\Models\Siniestro', 'id_siniestro', 'id');
     }
  
 

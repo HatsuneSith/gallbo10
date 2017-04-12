@@ -1,14 +1,16 @@
-<?php 
+<?php namespace App\Models;
+
 /*use Illuminate\Auth\UserTrait;
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableTrait;
 use Illuminate\Auth\Reminders\RemindableInterface;*/
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
-class Usuario extends Eloquent implements AuthenticatableContract, CanResetPasswordContract{ //Todos los modelos deben extender la clase Eloquent
+class Usuario extends Model implements AuthenticatableContract, CanResetPasswordContract{ //Todos los modelos deben extender la clase Eloquent
 
 	use Authenticatable, CanResetPassword;
 
@@ -17,14 +19,14 @@ class Usuario extends Eloquent implements AuthenticatableContract, CanResetPassw
     protected $hidden = array('password', 'remember_token');
 
     public function tareas(){
-    	return $this->hasMany('Tarea', 'id_responsable');
+    	return $this->hasMany('App\Models\Tarea', 'id_responsable');
     }
 
     public function comentariosTarea(){
-        return $this->hasMany('ComentarioTarea', 'id_usuario');
+        return $this->hasMany('App\Models\ComentarioTarea', 'id_usuario');
     }
     public function comentariosPromocionSiniestros(){
-        return $this->hasMany('ComentarioPromocionSiniestro', 'id_usuario');
+        return $this->hasMany('App\Models\ComentarioPromocionSiniestro', 'id_usuario');
     }
 
     // este metodo se debe implementar por la interfaz
@@ -41,7 +43,7 @@ class Usuario extends Eloquent implements AuthenticatableContract, CanResetPassw
     }
 
     public function siniestro(){
-        return $this->hasOne('ResponsableSiniestro', 'id_usuario');
+        return $this->hasOne('App\Models\ResponsableSiniestro', 'id_usuario');
     }
 
 }

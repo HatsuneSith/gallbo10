@@ -1,4 +1,13 @@
-<?php 
+<?php namespace App\Http\Controllers;
+use View;
+use Auth;
+use DB;
+use App\Models\tarea;
+use App\Models\usuario;
+use App\Models\prorroga;
+use App\Models\compromiso;
+use App\Models\comentarioTarea;
+
 class TareasController extends Controller {
 
     public function principal()

@@ -1,4 +1,44 @@
-<?php 
+<?php namespace App\Http\Controllers;
+use View;
+use Auth;
+use DB;
+use App\Models\Siniestro;
+use App\Models\Estados;
+use App\Models\GirosEmpresas;
+use App\Models\TiposSiniestros;
+use App\Models\TiposPersonas;
+use App\Models\Asegurado;
+use App\Models\Aseguradora;
+use App\Models\TableroSiniestrosNoRegistrados;
+use App\Models\Estados;
+use App\Models\Sexos;
+use App\Models\CaracteresAsegurado;
+use App\Models\RamosPolizas;
+use App\Models\Monedas;
+use App\Models\Coberturas;
+use App\Models\PerdidasConsecuenciales;
+use App\Models\ClausulasEspeciales;
+use App\Models\usuario;
+use App\Models\ApoderadoLegal;
+use App\Models\Contacto;
+use App\Models\ActaConstitutiva;
+use App\Models\AgentesSeguros;
+use App\Models\DirectorDespacho;
+use App\Models\DirectorSiniestros;
+use App\Models\AveriguacionPrevia;
+use App\Models\Poliza;
+use App\Models\AgenteSeguroSiniestro;
+use App\Models\LimitacionValorReposicion;
+use App\Models\GerenciaSiniestros;
+use App\Models\Ajustadora;
+use App\Models\Ajustadores;
+use App\Models\AjustadorDesignado;
+use App\Models\MedidasSeguridad;
+use App\Models\EndososConvenios;
+use App\Models\Bitacora;
+use App\Models\TableroFechas;
+
+
 class ReclamacionController extends Controller {
 
     public function inicio()

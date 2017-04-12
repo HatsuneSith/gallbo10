@@ -1,5 +1,7 @@
-<?php 
-class DirectorDespacho extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class DirectorDespacho extends Model {
     protected $table = 'DirectorDespacho';
     protected $fillable = array('id_ajustadora',
     							'nombre',
@@ -10,7 +12,7 @@ class DirectorDespacho extends Eloquent {
                                 );
 
     public function ajustadora(){
-        return $this->belongsTo('Ajustadora', 'id_ajustadora', 'id');
+        return $this->belongsTo('App\Models\Ajustadora', 'id_ajustadora', 'id');
     }
 
 

@@ -1,5 +1,7 @@
-<?php 
-class Documentos extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class Documentos extends Model {
     protected $table = 'Documentos';
 
 }

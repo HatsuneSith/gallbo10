@@ -1,5 +1,7 @@
-<?php 
-class ClientesJuridico extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class ClientesJuridico extends Model {
     protected $table = 'ClientesJuridico';
     protected $fillable = array('cliente',
                                 'aseguradora', 
@@ -10,11 +12,11 @@ class ClientesJuridico extends Eloquent {
 
 
     public function acuerdo(){
-        return $this->hasMany('AcuerdosJuridico', 'id_cliente');
+        return $this->hasMany('App\Models\AcuerdosJuridico', 'id_cliente');
     }
 
     public function juicio(){
-        return $this->hasOne('FechasJuicios', 'id_cliente');
+        return $this->hasOne('App\Models\FechasJuicios', 'id_cliente');
     }
 
     

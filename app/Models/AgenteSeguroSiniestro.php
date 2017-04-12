@@ -1,16 +1,18 @@
-<?php 
-class AgenteSeguroSiniestro extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class AgenteSeguroSiniestro extends Model {
     protected $table = 'AgenteSeguroSiniestro';
     protected $fillable = array('id_agente',
     							'id_aseguradora'
                                 );
 
     public function agente(){
-        return $this->belongsTo('AgentesSeguros', 'id_agente', 'id');
+        return $this->belongsTo('App\Models\AgentesSeguros', 'id_agente', 'id');
     }
 
     public function aseguradora(){
-        return $this->belongsTo('Aseguradora', 'id_aseguradora', 'id');
+        return $this->belongsTo('App\Models\Aseguradora', 'id_aseguradora', 'id');
     }
 
 

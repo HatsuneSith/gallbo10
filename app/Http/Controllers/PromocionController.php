@@ -1,4 +1,13 @@
-<?php 
+<?php namespace App\Http\Controllers;
+use View;
+use Auth;
+use DB;
+use App\Models\PromocionSiniestro;
+use App\Models\ComentarioPromocionSiniestro;
+use App\Models\Siniestro;
+use App\Models\Asegurado;
+use App\Models\PropuestaSiniestro;
+
 class PromocionController extends Controller {
 
     public function inicio()

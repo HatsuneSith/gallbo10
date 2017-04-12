@@ -1,7 +1,8 @@
-<?php 
+<?php namespace App\Http\Controllers;
+use View;
+use Auth;
+
 class SireController extends Controller {
-
-
 
 
     public function inicio()

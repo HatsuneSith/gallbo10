@@ -1,4 +1,12 @@
-<?php 
+<?php namespace App\Http\Controllers;
+use View;
+use Auth;
+use DB;
+use App\Models\compromiso;
+use App\Models\Validator;
+use App\Models\usuario;
+use App\Models\Tarea;
+
 class CompromisosController extends Controller {
 
 

@@ -1,5 +1,7 @@
-<?php 
-class Aseguradora extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class Aseguradora extends Model {
     protected $table = 'Aseguradora';
     protected $fillable = array('nombre',
                                 'domicilio', 
@@ -14,15 +16,15 @@ class Aseguradora extends Eloquent {
 
     
     public function estado(){
-        return $this->belongsTo('Estados', 'estado', 'id');
+        return $this->belongsTo('App\Models\Estados', 'estado', 'id');
     }
 
     public function gerencia_siniestros(){
-        return $this->hasOne('GerenciaSiniestros', 'id_aseguradora');
+        return $this->hasOne('App\Models\GerenciaSiniestros', 'id_aseguradora');
     }
 
     public function director_siniestros(){
-        return $this->hasOne('DirectorSiniestros', 'id_aseguradora');
+        return $this->hasOne('App\Models\DirectorSiniestros', 'id_aseguradora');
     }
 
 

@@ -1,5 +1,7 @@
-<?php 
-class TableroSiniestrosNoRegistrados extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class TableroSiniestrosNoRegistrados extends Model {
     protected $table = 'TableroSiniestrosNoRegistrados';
     protected $fillable = array('asegurado',
                                 'ejecutivo',

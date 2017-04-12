@@ -1,4 +1,9 @@
-<?php 
+<?php namespace App\Http\Controllers;
+use View;
+use Auth;
+use DB;
+
+
 class IndagacionController extends Controller {
 
 

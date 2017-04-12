@@ -1,5 +1,7 @@
-<?php 
-class PromocionSiniestro extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class PromocionSiniestro extends Model {
     protected $table = 'PromocionSiniestros';
     protected $fillable = array('fecha_siniestro', 
                                 'nombre', 
@@ -20,23 +22,23 @@ class PromocionSiniestro extends Eloquent {
                                 'estatus');
 
     public function comentarios(){
-    	return $this->hasMany('ComentarioPromocionSiniestro', 'id_promocion_siniestros');
+    	return $this->hasMany('App\Models\ComentarioPromocionSiniestro', 'id_promocion_siniestros');
     }
 
     public function tipo_siniestro(){
-    	return $this->belongsTo('TiposSiniestros', 'tipo_siniestro', 'id');
+    	return $this->belongsTo('App\Models\TiposSiniestros', 'tipo_siniestro', 'id');
     }
 
     public function estado(){
-    	return $this->belongsTo('Estados', 'estado', 'id');
+    	return $this->belongsTo('App\Models\Estados', 'estado', 'id');
     }
 
     public function giro_empresa(){
-    	return $this->belongsTo('GirosEmpresas', 'giro_empresa', 'id');
+    	return $this->belongsTo('App\Models\GirosEmpresas', 'giro_empresa', 'id');
     }
 
     public function propuesta(){
-    	return $this->hasOne('PropuestaSiniestro', 'id_promocion_siniestro');
+    	return $this->hasOne('App\Models\PropuestaSiniestro', 'id_promocion_siniestro');
     }
 
     

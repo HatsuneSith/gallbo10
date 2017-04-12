@@ -1,5 +1,7 @@
-<?php 
-class Ajustadores extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class Ajustadores extends Model {
     protected $table = 'Ajustadores';
     protected $fillable = array('nombre',
     							'domicilio',
@@ -13,7 +15,7 @@ class Ajustadores extends Eloquent {
                                 );
 
     public function estado(){
-        return $this->belongsTo('Estados', 'estado', 'id');
+        return $this->belongsTo('App\Models\Estados', 'estado', 'id');
     }
 
 

@@ -1,5 +1,7 @@
-<?php 
-class FechasJuicios extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class FechasJuicios extends Model {
     protected $table = 'FechasJuicios';
     protected $fillable = array('id_cliente',
                                 'fecha_contrato_rechazo',

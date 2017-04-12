@@ -1,16 +1,18 @@
-<?php 
-class ResponsableSiniestro extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class ResponsableSiniestro extends Model {
     protected $table = 'ResponsableSiniestro';
     protected $fillable = array('id_siniestro',
     							'id_usuario'
                                 );
 
     public function siniestro(){
-        return $this->belongsTo('Siniestro', 'id_siniestro', 'id');
+        return $this->belongsTo('App\Models\Siniestro', 'id_siniestro', 'id');
     }
 
     public function usuario(){
-        return $this->belongsTo('Usuario', 'id_usuario', 'id');
+        return $this->belongsTo('App\Models\Usuario', 'id_usuario', 'id');
     }
 
     

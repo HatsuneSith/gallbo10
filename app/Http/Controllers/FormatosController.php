@@ -1,4 +1,9 @@
-<?php 
+<?php namespace App\Http\Controllers;
+use View;
+use Auth;
+use DB;
+use App\Models\Siniestro;
+
 class FormatosController extends Controller {
 
 

@@ -1,5 +1,7 @@
-<?php 
-class Contacto extends Eloquent {
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class Contacto extends Model {
     protected $table = 'Contacto';
     protected $fillable = array('nombre',
                                 'sexo', 
@@ -10,7 +12,7 @@ class Contacto extends Eloquent {
 
 
     public function sexo(){
-        return $this->belongsTo('Sexos', 'sexo', 'id');
+        return $this->belongsTo('App\Models\Sexos', 'sexo', 'id');
     }
 
 }

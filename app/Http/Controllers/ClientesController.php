@@ -1,4 +1,10 @@
-<?php 
+<?php namespace App\Http\Controllers;
+use View;
+use Auth;
+use DB;
+use App\Models\Siniestro;
+use App\Models\DocumentosSiniestros;
+
 class ClientesController extends Controller {
 
 

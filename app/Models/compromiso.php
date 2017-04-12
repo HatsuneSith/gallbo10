@@ -1,5 +1,7 @@
-<?php 
-class Compromiso extends Eloquent { //Todos los modelos deben extender la clase Eloquent
+<?php namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+class Compromiso extends Model { //Todos los modelos deben extender la clase Eloquent
     protected $table = 'compromisos';
     protected $fillable = array('compromiso', 'responsable', 'fecha', 'cumplido', 'fecha_cumplimiento');
 
@@ -7,11 +9,11 @@ class Compromiso extends Eloquent { //Todos los modelos deben extender la clase 
     {
         if($responsable != "")
         {
-            $query->where('responsable', $responsable);
+            $query->where('App\Models\responsable', $responsable);
         }
 
         else{
-            $query->where('responsable', Auth::user()->id);
+            $query->where('App\Models\responsable', Auth::user()->id);
         }
     }
 
