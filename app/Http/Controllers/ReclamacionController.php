@@ -2,6 +2,9 @@
 use View;
 use Auth;
 use DB;
+use DateTime;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
 use App\Models\Siniestro;
 use App\Models\Estados;
 use App\Models\GirosEmpresas;
@@ -10,7 +13,6 @@ use App\Models\TiposPersonas;
 use App\Models\Asegurado;
 use App\Models\Aseguradora;
 use App\Models\TableroSiniestrosNoRegistrados;
-use App\Models\Estados;
 use App\Models\Sexos;
 use App\Models\CaracteresAsegurado;
 use App\Models\RamosPolizas;
@@ -37,6 +39,7 @@ use App\Models\MedidasSeguridad;
 use App\Models\EndososConvenios;
 use App\Models\Bitacora;
 use App\Models\TableroFechas;
+use App\Models\EjecutivoAsignado;
 
 
 class ReclamacionController extends Controller {

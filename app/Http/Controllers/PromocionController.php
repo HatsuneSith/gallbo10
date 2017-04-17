@@ -2,11 +2,18 @@
 use View;
 use Auth;
 use DB;
+use Request;
+use Validator;
+use Response;
+use Mail;
+use DateTime;
 use App\Models\PromocionSiniestro;
 use App\Models\ComentarioPromocionSiniestro;
 use App\Models\Siniestro;
 use App\Models\Asegurado;
 use App\Models\PropuestaSiniestro;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
 
 class PromocionController extends Controller {
 

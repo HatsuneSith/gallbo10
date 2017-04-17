@@ -1,4 +1,6 @@
 <?php namespace App\Models;
+use View;
+use Auth;
 
 use Illuminate\Database\Eloquent\Model;
 class Prorroga extends Model { //Todos los modelos deben extender la clase Eloquent

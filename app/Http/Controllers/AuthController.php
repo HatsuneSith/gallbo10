@@ -1,4 +1,9 @@
 <?php namespace App\Http\Controllers;
+use Auth;
+use View;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
+
 class AuthController extends Controller {
 
 	

@@ -258,7 +258,7 @@
 			</tbody>
 		</table>
 		</div>
-		<?php echo $compromisos->appends(array('responsable'=>$responsable))->links(); ?>
+		<?php echo $compromisos->appends(array('responsable'=>$responsable))->render(); ?>
 
 	</div>
 

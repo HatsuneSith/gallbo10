@@ -1,9 +1,16 @@
 <?php namespace App\Http\Controllers;
 use View;
 use Auth;
+use Hash;
 use DB;
+use DateTime;
+use Validator;
+use Request;
+use Response;
 use App\Models\Usuario;
 use App\Models\Asignacion;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
 
 
 class UsuariosController extends Controller {

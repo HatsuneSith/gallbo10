@@ -1,5 +1,7 @@
 <?php namespace App\Providers;
 
+use Illuminate\Support\Facades\Redirect;
+use Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Routing\Router;
@@ -83,13 +85,13 @@ class RouteServiceProvider extends ServiceProvider {
 		    }
 		});
 
-		/*Route::filter('clientes', function() 
+		Route::filter('clientes', function() 
 		{
 		    if (Auth::user()->departamento == 'Clientes' && Auth::user()->rol == 'Responsable')
 		    {
 		        return Redirect::to('/documentacion');
 		    }
-		});*/
+		});
 
 		Route::filter('noclientes', function() 
 		{
@@ -100,7 +102,7 @@ class RouteServiceProvider extends ServiceProvider {
 		});
 
 
-		/*Route::filter('auth', function()
+		Route::filter('auth', function()
 		{
 			if (Auth::guest())
 			{
@@ -113,7 +115,7 @@ class RouteServiceProvider extends ServiceProvider {
 					return Redirect::guest('login');
 				}
 			}
-		});*/
+		});
 
 
 		Route::filter('auth.basic', function()

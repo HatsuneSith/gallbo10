@@ -6,7 +6,7 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "5.0.*",
-		"thujohn/pdf": "dev-master",
+		"barryvdh/laravel-dompdf": "0.5.*",
 		"chumper/datatable": "dev-master",
 		"phpoffice/phpword": "dev-master",
 		"laravelcollective/html": "~5.0"

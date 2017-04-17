@@ -2,6 +2,9 @@
 use View;
 use Auth;
 use DB;
+use DateTime;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Redirect;
 use App\Models\Siniestro;
 
 class FormatosController extends Controller {

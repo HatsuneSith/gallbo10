@@ -2,11 +2,20 @@
 use View;
 use Auth;
 use DB;
+use DateTime;
+use Validator;
+use Mail;
+use DateInterval;
+use Request;
+use Response;
+use PDF;
 use App\Models\tarea;
 use App\Models\usuario;
 use App\Models\prorroga;
 use App\Models\compromiso;
 use App\Models\comentarioTarea;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
 
 class TareasController extends Controller {
 
@@ -770,7 +779,8 @@ class TareasController extends Controller {
 
             $html = View::make('tareas.reportes.pdf.usuarios')->with(array('tareas'=>$tareas, 'nombre'=>$nombre, 'apellido'=>$apellido, 'fecha_de'=>$fecha_de, 'date_hasta'=>$date_hasta));
 
-            return PDF::load(utf8_decode($html), 'A4', 'portrait')->download($nombre_pdf);
+            return PDF::loadHTML($html)->setPaper('a4')->setOrientation('portrait')->stream($nombre_pdf);
+            //return PDF::load(utf8_decode($html), 'A4', 'portrait')->download($nombre_pdf);
 
 
             //return Response::json(array('success' =>true));

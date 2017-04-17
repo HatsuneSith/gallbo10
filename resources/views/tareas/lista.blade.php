@@ -167,7 +167,7 @@
 		</table>
 		</div>
 
-		<?php echo $tareas->appends(array('id_responsable'=>$id_responsable, 'estado'=>$estado, 'indicador'=>$indicador))->links(); ?>
+		<?php echo $tareas->appends(array('id_responsable'=>$id_responsable, 'estado'=>$estado, 'indicador'=>$indicador))->render(); ?>
 	</div>
 
 @stop

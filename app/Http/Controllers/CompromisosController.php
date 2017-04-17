@@ -2,7 +2,11 @@
 use View;
 use Auth;
 use DB;
+use DateTime;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
 use App\Models\compromiso;
+use App\Models\responsable;
 use App\Models\Validator;
 use App\Models\usuario;
 use App\Models\Tarea;

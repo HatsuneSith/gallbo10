@@ -1,4 +1,6 @@
-<?phpnamespace App\Models;
+<?php namespace App\Models;
+use View;
+use Auth;
 
 /*use Illuminate\Auth\UserTrait;
 use Illuminate\Auth\UserInterface;

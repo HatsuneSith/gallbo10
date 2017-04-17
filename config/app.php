@@ -135,7 +135,6 @@ return [
 		'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
-		'Collective\Html\HtmlServiceProvider',
 
 		/*
 		 * Application Service Providers...
@@ -145,6 +144,12 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
+
+		/*
+		 * Outside Service Providers...
+		 */
+		'Collective\Html\HtmlServiceProvider',
+		'Barryvdh\DomPDF\ServiceProvider',
 
 	],
 
@@ -196,6 +201,7 @@ return [
 		'Form'		=> 'Collective\Html\FormFacade',
 		'HTML' 		=> 'Collective\Html\HtmlFacade',
 		'Html' 		=> 'Collective\Html\HtmlFacade',
+		'PDF' 		=> 'Barryvdh\DomPDF\Facade',
 
 	],
 

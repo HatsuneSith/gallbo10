@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 use View;
 use Auth;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
 
 class SireController extends Controller {
 

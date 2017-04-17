@@ -1,7 +1,9 @@
 <?php namespace App\Models;
-
-use Illuminate\Database\Eloquent\Model;
+use View;
+use Auth;
 use DB;
+use Illuminate\Database\Eloquent\Model;
+
 class Tarea extends Model {
     protected $table = 'tareas';
     protected $fillable = array('id_compromiso', 'tarea', 'objetivo', 'fecha', 'estado', 'indicador', 'id_responsable', 'nombre_responsable', 'id_asignador', 'nombre_asignador', 'fecha_concluida');

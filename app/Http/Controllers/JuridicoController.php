@@ -5,6 +5,8 @@ use DB;
 use App\Models\ClientesJuridico;
 use App\Models\FechasJuicios;
 use App\Models\AcuerdosJuridico;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
 
 
 class JuridicoController extends Controller {

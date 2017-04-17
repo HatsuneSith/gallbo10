@@ -1,5 +1,6 @@
 <?php namespace App\Models;
-
+use View;
+use Auth;
 use Illuminate\Database\Eloquent\Model;
 class AcuerdosJuridico extends Model {
     protected $table = 'AcuerdosJuridico';
