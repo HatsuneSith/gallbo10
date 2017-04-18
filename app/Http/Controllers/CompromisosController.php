@@ -2,12 +2,15 @@
 use View;
 use Auth;
 use DB;
+use Mail;
 use DateTime;
+use Request;
+use Response;
+use Session;
+use Validator;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
 use App\Models\compromiso;
-use App\Models\responsable;
-use App\Models\Validator;
 use App\Models\usuario;
 use App\Models\Tarea;
 
@@ -43,8 +46,8 @@ class CompromisosController extends Controller {
 
         
         return View::make('compromisos.inicio', array('compromisos' => $compromisos, 'asignados' => $asignados, 'usuarios' => $usuarios, 'responsable' => $responsable,'mes_actual' => $mes_actual, 'año_actual' => $año_actual));
-
     }
+
 
     public function crear()
     {

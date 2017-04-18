@@ -11,11 +11,11 @@ class Compromiso extends Model { //Todos los modelos deben extender la clase Elo
     {
         if($responsable != "")
         {
-            $query->where('App\Models\responsable', $responsable);
+            $query->where('responsable', $responsable);
         }
 
         else{
-            $query->where('App\Models\responsable', Auth::user()->id);
+            $query->where('responsable', Auth::user()->id);
         }
     }
 

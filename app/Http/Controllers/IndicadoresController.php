@@ -3,6 +3,8 @@ use View;
 use Auth;
 use DB;
 use DateTime;
+use Request;
+use Response;
 use App\Models\indicador;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
