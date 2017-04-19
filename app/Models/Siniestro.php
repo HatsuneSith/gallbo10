@@ -63,7 +63,7 @@ class Siniestro extends Model {
     }
 
     public function clasificacion_documentos(){
-        return $this->belongsToMany('App\Models\ClasificacionDocumentos', 'App\Models\ClasificacionDocumentosSiniestros', 'id_siniestro', 'id_clasificacion');
+        return $this->belongsToMany('App\Models\ClasificacionDocumentos', 'ClasificacionDocumentosSiniestros', 'id_siniestro', 'id_clasificacion');
     }
 
     public function bitacora(){
@@ -71,15 +71,15 @@ class Siniestro extends Model {
     }
 
     public function ejecutivo_asignado(){
-        return $this->belongsToMany('App\Models\Usuario', 'App\Models\EjecutivoAsignado', 'id_siniestro', 'id_usuario');
+        return $this->belongsToMany('App\Models\Usuario', 'EjecutivoAsignado', 'id_siniestro', 'id_usuario');
     }
 
     public function responsable(){
-        return $this->belongsToMany('App\Models\Usuario', 'App\Models\ResponsableSiniestro', 'id_siniestro', 'id_usuario');
+        return $this->belongsToMany('App\Models\Usuario', 'ResponsableSiniestro', 'id_siniestro', 'id_usuario');
     }
 
     public function documentos(){
-        return $this->belongsToMany('App\Models\Documentos', 'App\Models\DocumentosSiniestros', 'id_siniestro', 'id_documento')->withPivot('id_responsable', 'nombre_responsable', 'fecha_entrega', 'entregado', 'archivo', 'observaciones');
+        return $this->belongsToMany('App\Models\Documentos', 'DocumentosSiniestros', 'id_siniestro', 'id_documento')->withPivot('id_responsable', 'nombre_responsable', 'fecha_entrega', 'entregado', 'archivo', 'observaciones');
     }
 
     public function tablero(){

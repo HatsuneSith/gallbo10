@@ -1,4 +1,4 @@
-{{--nuevo comentario bitacora--}}
+{{{--nuevo comentario bitacora--}}}
 <div class="modal fade nuevoComentarioBitacoraR-modal" id="nuevoComentarioBitacoraR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">

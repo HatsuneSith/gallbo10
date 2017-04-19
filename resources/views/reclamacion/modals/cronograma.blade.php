@@ -1,4 +1,4 @@
-{{--agregar documento--}}
+{{{--agregar documento--}}}
 <div class="modal fade nuevoDocumentoSiniestroR-modal" id="nuevoDocumentoSiniestroR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -34,7 +34,7 @@
     </div>
 </div>
 
-{{--editar documentacion--}}
+{{{--editar documentacion--}}}
 <div class="modal fade editarDocumentacionR-modal" id="editarDocumentacionR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -99,7 +99,7 @@
     </div>
 </div>
 
-{{--nuevo contacto--}}
+{{{--nuevo contacto--}}}
 <div class="modal fade nuevoResponsableR-modal" id="nuevoResponsableR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -166,7 +166,7 @@
     </div>
 </div>
 
-{{--ver repsonsables--}}
+{{{--ver repsonsables--}}}
 <div class="modal fade verResponsablesR-modal" id="verResponsablesR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">

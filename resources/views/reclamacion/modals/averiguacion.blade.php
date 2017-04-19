@@ -1,4 +1,4 @@
-{{--nuevo averiguacion--}}
+{{{--nuevo averiguacion--}}}
 <div class="modal fade nuevoAveriguacionR-modal" id="nuevoAveriguacionR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
@@ -50,7 +50,7 @@
     </div>
 </div>
 
-{{--editar averiguacion--}}
+{{{--editar averiguacion--}}}
 <div class="modal fade editarAveriguacionR-modal" id="editarAveriguacionR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">

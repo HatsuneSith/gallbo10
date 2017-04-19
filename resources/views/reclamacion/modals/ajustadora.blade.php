@@ -1,4 +1,4 @@
-{{--nuevo Ajustadora--}}
+{{{--nuevo Ajustadora--}}}
 <div class="modal fade nuevoAjustadoraR-modal" id="nuevoAjustadoraR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -70,7 +70,7 @@
     </div>
 </div>
 
-{{--editar Ajustadora--}}
+{{{--editar Ajustadora--}}}
 <div class="modal fade editarAjustadoraR-modal" id="editarAjustadoraR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -141,7 +141,7 @@
     </div>
 </div>
 
-{{--nuevo director de despacho--}}
+{{{--nuevo director de despacho--}}}
 <div class="modal fade nuevoDirectorDespachoR-modal" id="nuevoDirectorDespachoR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -205,7 +205,7 @@
     </div>
 </div>
 
-{{--editar director de despacho--}}
+{{{--editar director de despacho--}}}
 <div class="modal fade editarDirectorDespachoR-modal" id="editarDirectorDespachoR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -271,7 +271,7 @@
 
 
 
-{{--nuevo austador--}}
+{{{--nuevo austador--}}}
 <div class="modal fade nuevoAjustadorDesignadoR-modal" id="nuevoAjustadorDesignadoR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -369,7 +369,7 @@
     </div>
 </div>
 
-{{--editar ajustador designado--}}
+{{{--editar ajustador designado--}}}
 <div class="modal fade editarAjustadorDesignadoR-modal" id="editarAjustadorDesignadoR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -466,7 +466,7 @@
     </div>
 </div>
 
-{{--seleccionar ajustador--}}
+{{{--seleccionar ajustador--}}}
 <div class="modal fade seleccionarAjustadorDesignadoR-modal" id="seleccionarAjustadorDesignadoR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -565,7 +565,7 @@
     </div>
 </div>
 
-{{--seleccionar ajustadora--}}
+{{{--seleccionar ajustadora--}}}
 <div class="modal fade seleccionarAjustadoraR-modal" id="seleccionarAjustadoraR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">

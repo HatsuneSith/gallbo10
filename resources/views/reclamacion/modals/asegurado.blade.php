@@ -1,4 +1,4 @@
-{{--editar asegurado--}}
+{{{--editar asegurado--}}}
 <div class="modal fade editarAseguradoR-modal" id="editarAseguradoR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -132,9 +132,9 @@
     </div>
 </div>
 
-{{-------------------------------------------------------------------------------------------------------------}}
+{{{-------------------------------------------------------------------------------------------------------------}}}
 
-{{--nuevo apoderado--}}
+{{{--nuevo apoderado--}}}
 <div class="modal fade nuevoApoderadoR-modal" id="nuevoApoderadoR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -203,7 +203,7 @@
     </div>
 </div>
 
-{{--seleccionar apoderado--}}
+{{{--seleccionar apoderado--}}}
 <div class="modal fade seleccionarApoderadoR-modal" id="seleccionarApoderadoR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -274,7 +274,7 @@
     </div>
 </div>
 
-{{--editar apoderado--}}
+{{{--editar apoderado--}}}
 <div class="modal fade editarApoderadoR-modal" id="editarApoderadoR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -343,9 +343,9 @@
     </div>
 </div>
 
-{{-------------------------------------------------------------------------------------------------------------}}
+{{{-------------------------------------------------------------------------------------------------------------}}}
 
-{{--nuevo contacto--}}
+{{{--nuevo contacto--}}}
 <div class="modal fade nuevoContactoR-modal" id="nuevoContactoR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -414,7 +414,7 @@
     </div>
 </div>
 
-{{--seleccionar contacto--}}
+{{{--seleccionar contacto--}}}
 <div class="modal fade seleccionarContactoR-modal" id="seleccionarContactoR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -484,7 +484,7 @@
     </div>
 </div>
 
-{{--editar contacto--}}
+{{{--editar contacto--}}}
 <div class="modal fade editarContactoR-modal" id="editarContactoR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -553,9 +553,9 @@
     </div>
 </div>
 
-{{-------------------------------------------------------------------------------------------------------------}}
+{{{-------------------------------------------------------------------------------------------------------------}}}
 
-{{--nuevo acta constitutiva--}}
+{{{--nuevo acta constitutiva--}}}
 <div class="modal fade nuevoActaConstitutivaR-modal" id="nuevoActaConstitutivaR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -619,7 +619,7 @@
     </div>
 </div>
 
-{{--editar acta constitutiva--}}
+{{{--editar acta constitutiva--}}}
 <div class="modal fade editarActaConstitutivaR-modal" id="editarActaConstitutivaR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -683,9 +683,9 @@
     </div>
 </div>
 
-{{-------------------------------------------------------------------------------------------------------------}}
+{{{-------------------------------------------------------------------------------------------------------------}}}
 
-{{--agregar logo--}}
+{{{--agregar logo--}}}
 <div class="modal fade nuevoLogoR-modal" id="nuevoLogoR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -720,9 +720,9 @@
     </div>
 </div>
 
-{{-------------------------------------------------------------------------------------------------------------}}
+{{{-------------------------------------------------------------------------------------------------------------}}}
 
-{{--agregar caracter--}}
+{{{--agregar caracter--}}}
 <div class="modal fade nuevoCaracterR-modal" id="nuevoCaracterR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
@@ -754,7 +754,7 @@
     </div>
 </div>
 
-{{--editar caracter--}}
+{{{--editar caracter--}}}
 <div class="modal fade editarCaracterR-modal" id="editarCaracterR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">

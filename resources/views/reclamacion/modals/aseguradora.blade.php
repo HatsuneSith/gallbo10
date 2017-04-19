@@ -1,4 +1,4 @@
-{{--nuevo Aseguradora--}}
+{{{--nuevo Aseguradora--}}}
 <div class="modal fade nuevoAseguradoraR-modal" id="nuevoAseguradoraR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -91,7 +91,7 @@
     </div>
 </div>
 
-{{--editar Aseguradora--}}
+{{{--editar Aseguradora--}}}
 <div class="modal fade editarAseguradoraR-modal" id="editarAseguradoraR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -182,7 +182,7 @@
     </div>
 </div>
 
-{{--nuevo director de siniestros--}}
+{{{--nuevo director de siniestros--}}}
 <div class="modal fade nuevoDirectorSiniestrosR-modal" id="nuevoDirectorSiniestrosR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -239,7 +239,7 @@
     </div>
 </div>
 
-{{--editar director de siniestros--}}
+{{{--editar director de siniestros--}}}
 <div class="modal fade editarDirectorSiniestrosR-modal" id="editarDirectorSiniestrosR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -296,7 +296,7 @@
     </div>
 </div>
 
-{{--nuevo gerencia de siniestros--}}
+{{{--nuevo gerencia de siniestros--}}}
 <div class="modal fade nuevoGerenciaSiniestrosR-modal" id="nuevoGerenciaSiniestrosR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -353,7 +353,7 @@
     </div>
 </div>
 
-{{--editar gerencia de siniestros--}}
+{{{--editar gerencia de siniestros--}}}
 <div class="modal fade editarGerenciaSiniestrosR-modal" id="editarGerenciaSiniestrosR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -410,7 +410,7 @@
     </div>
 </div>
 
-{{--nuevo agente de seguros--}}
+{{{--nuevo agente de seguros--}}}
 <div class="modal fade nuevoAgenteSegurosR-modal" id="nuevoAgenteSegurosR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -508,7 +508,7 @@
     </div>
 </div>
 
-{{--editar agente de seguros--}}
+{{{--editar agente de seguros--}}}
 <div class="modal fade editarAgenteSegurosR-modal" id="editarAgenteSegurosR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -605,7 +605,7 @@
     </div>
 </div>
 
-{{--seleccionar aente de seguros--}}
+{{{--seleccionar aente de seguros--}}}
 <div class="modal fade seleccionarAgenteSegurosR-modal" id="seleccionarAgenteSegurosR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -704,7 +704,7 @@
     </div>
 </div>
 
-{{--seleccionar aseguradora--}}
+{{{--seleccionar aseguradora--}}}
 <div class="modal fade seleccionarAseguradoraR-modal" id="seleccionarAseguradoraR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">

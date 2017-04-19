@@ -33,15 +33,15 @@ class Poliza extends Model {
     }
 
     public function coberturas(){
-        return $this->belongsToMany('App\Models\Coberturas', 'App\Models\CoberturasAfectadas', 'id_poliza', 'id_coberturas')->withPivot('suma_asegurada', 'valor_declarado', 'deducible', 'coaseguro');
+        return $this->belongsToMany('App\Models\Coberturas', 'CoberturasAfectadas', 'id_poliza', 'id_coberturas')->withPivot('suma_asegurada', 'valor_declarado', 'deducible', 'coaseguro');
     }
 
     public function perdidas_consecuenciales(){
-        return $this->belongsToMany('App\Models\PerdidasConsecuenciales', 'App\Models\PerdidasConsecuencialesPoliza', 'id_poliza', 'id_perdidas_consecuenciales')->withPivot('periodo_indemnizacion');
+        return $this->belongsToMany('App\Models\PerdidasConsecuenciales', 'PerdidasConsecuencialesPoliza', 'id_poliza', 'id_perdidas_consecuenciales')->withPivot('periodo_indemnizacion');
     }
 
     public function clausulas_especiales(){
-        return $this->belongsToMany('App\Models\ClausulasEspeciales', 'App\Models\ClausulasEspecialesPoliza', 'id_poliza', 'id_clausulas_especiales');
+        return $this->belongsToMany('App\Models\ClausulasEspeciales', 'ClausulasEspecialesPoliza', 'id_poliza', 'id_clausulas_especiales');
     }
 
     public function limitacion_valor_reposicion(){

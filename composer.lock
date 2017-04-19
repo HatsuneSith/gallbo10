@@ -60,12 +60,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chumper/Datatable.git",
-                "reference": "d4c986945c7d12eeab071c22d5d442759cd5c6f2"
+                "reference": "d1a7ef0ed1f1da90b9556163afa61662a959cf8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chumper/Datatable/zipball/d4c986945c7d12eeab071c22d5d442759cd5c6f2",
-                "reference": "d4c986945c7d12eeab071c22d5d442759cd5c6f2",
+                "url": "https://api.github.com/repos/Chumper/Datatable/zipball/d1a7ef0ed1f1da90b9556163afa61662a959cf8b",
+                "reference": "d1a7ef0ed1f1da90b9556163afa61662a959cf8b",
                 "shasum": ""
             },
             "require": {
@@ -106,7 +106,7 @@
                 "laravel"
             ],
             "abandoned": "OpenSkill/Datatable",
-            "time": "2017-03-06T09:01:54+00:00"
+            "time": "2017-04-18T09:30:46+00:00"
         },
         {
             "name": "classpreloader/classpreloader",

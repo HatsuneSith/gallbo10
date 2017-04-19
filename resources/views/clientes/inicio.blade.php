@@ -65,7 +65,7 @@
 @stop
 
 @section('modals')
-	{{--agregar documento--}}
+	{{{--agregar documento--}}}
 	<div class="modal fade nuevoDocumentoSiniestroR-modal" id="nuevoDocumentoSiniestroR-modal" tabindex="-1" role="dialog" aria-hidden="true">
 	    <div class="modal-dialog modal-lg">
 	        <div class="modal-content">

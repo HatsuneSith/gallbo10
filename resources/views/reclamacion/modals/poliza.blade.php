@@ -1,4 +1,4 @@
-{{--nuevo poliza--}}
+{{{--nuevo poliza--}}}
 
 <div class="modal fade nuevoPolizaR-modal" id="nuevoPolizaR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -84,7 +84,7 @@
 
 @if($siniestro->id_poliza != null)
 
-{{--editar poliza--}}
+{{{--editar poliza--}}}
 <div class="modal fade editarPolizaR-modal" id="editarPolizaR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -165,7 +165,7 @@
     </div>
 </div>
 
-{{--nuevo medidas de seguridad--}}
+{{{--nuevo medidas de seguridad--}}}
 <div class="modal fade nuevoMedidasSeguridadR-modal" id="nuevoMedidasSeguridadR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -202,7 +202,7 @@
     </div>
 </div>
 
-{{--nuevo limitacion valor reposocion--}}
+{{{--nuevo limitacion valor reposocion--}}}
 <div class="modal fade nuevoLimitacionValorReposicionR-modal" id="nuevoLimitacionValorReposicionR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -240,7 +240,7 @@
 
 @if($siniestro->poliza->limitacion_valor_reposicion()->first() != NULL)
 
-{{--editar limitacion valor reposocion--}}
+{{{--editar limitacion valor reposocion--}}}
 <div class="modal fade editarLimitacionValorReposicionR-modal" id="editarLimitacionValorReposicionR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -277,7 +277,7 @@
 </div>
 @endif
 
-{{--nuevo endosos/convenios--}}
+{{{--nuevo endosos/convenios--}}}
 <div class="modal fade nuevoEndososConveniosR-modal" id="nuevoEndososConveniosR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -314,7 +314,7 @@
     </div>
 </div>
 
-{{--agregar coberturas--}}
+{{{--agregar coberturas--}}}
 <div class="modal fade nuevoCoberturasR-modal" id="nuevoCoberturasR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
@@ -346,7 +346,7 @@
     </div>
 </div>
 
-{{--editar coberturas--}}
+{{{--editar coberturas--}}}
 <div class="modal fade editarCoberturasR-modal" id="editarCoberturasR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
@@ -378,7 +378,7 @@
     </div>
 </div>
 
-{{--editar datos de coberturas--}}
+{{{--editar datos de coberturas--}}}
 <div class="modal fade editarCoberturasDatosR-modal" id="editarCoberturasDatosR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
@@ -427,7 +427,7 @@
     </div>
 </div>
 
-{{--agregar perdidas consecuenciales--}}
+{{{--agregar perdidas consecuenciales--}}}
 <div class="modal fade nuevoPerdidasConsecuencialesR-modal" id="nuevoPerdidasConsecuencialesR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
@@ -459,7 +459,7 @@
     </div>
 </div>
 
-{{--editar perdidas consecuenciales--}}
+{{{--editar perdidas consecuenciales--}}}
 <div class="modal fade editarPerdidasConsecuencialesR-modal" id="editarPerdidasConsecuencialesR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
@@ -491,7 +491,7 @@
     </div>
 </div>
 
-{{--editar perdidas consecuenciales indemnizacion--}}
+{{{--editar perdidas consecuenciales indemnizacion--}}}
 <div class="modal fade editarPerdidasConsecuencialesIndemnizacionR-modal" id="editarPerdidasConsecuencialesIndemnizacionR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
@@ -534,7 +534,7 @@
     </div>
 </div>
 
-{{--agregar clausulas especiales--}}
+{{{--agregar clausulas especiales--}}}
 <div class="modal fade nuevoClausulasEspecialesR-modal" id="nuevoClausulasEspecialesR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
@@ -564,7 +564,7 @@
     </div>
 </div>
 
-{{--editar clausulas especiales--}}
+{{{--editar clausulas especiales--}}}
 <div class="modal fade editarClausulasEspecialesR-modal" id="editarClausulasEspecialesR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">

@@ -1,4 +1,4 @@
-{{--agregar documentacion--}}
+{{{--agregar documentacion--}}}
 <div class="modal fade nuevoDocumentacionR-modal" id="nuevoDocumentacionR-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
