@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 use View;
 use Auth;
+use Hash;
 use DB;
 use DateTime;
 use File;
@@ -30,6 +31,7 @@ use App\Models\ActaConstitutiva;
 use App\Models\AgentesSeguros;
 use App\Models\DirectorDespacho;
 use App\Models\DirectorSiniestros;
+use App\Models\DocumentosSiniestros;
 use App\Models\AveriguacionPrevia;
 use App\Models\Poliza;
 use App\Models\AgenteSeguroSiniestro;

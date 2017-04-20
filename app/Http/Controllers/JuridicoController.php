@@ -2,6 +2,8 @@
 use View;
 use Auth;
 use DB;
+use Request;
+use Response;
 use App\Models\ClientesJuridico;
 use App\Models\FechasJuicios;
 use App\Models\AcuerdosJuridico;
