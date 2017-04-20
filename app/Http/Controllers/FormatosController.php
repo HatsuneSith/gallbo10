@@ -5,6 +5,7 @@ use DB;
 use DateTime;
 use Request;
 use Response;
+use ZipArchive;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\Siniestro;

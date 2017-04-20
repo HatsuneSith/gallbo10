@@ -3,9 +3,11 @@ use View;
 use Auth;
 use DB;
 use Request;
+use File;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
 use App\Models\Siniestro;
+use App\Models\Usuario;
 use App\Models\DocumentosSiniestros;
 
 class ClientesController extends Controller {

@@ -3,6 +3,7 @@ use View;
 use Auth;
 use DB;
 use Request;
+use Response;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
 

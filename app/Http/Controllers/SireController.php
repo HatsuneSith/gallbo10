@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 use View;
 use Auth;
+use PDF;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
 
