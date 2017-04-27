@@ -135,7 +135,6 @@ return [
 		'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
-		'Illuminate\Broadcasting\BroadcastServiceProvider',
 
 		/*
 		 * Application Service Providers...
@@ -151,7 +150,6 @@ return [
 		 */
 		'Collective\Html\HtmlServiceProvider',
 		'Barryvdh\DomPDF\ServiceProvider',
-
 
 	],
 
